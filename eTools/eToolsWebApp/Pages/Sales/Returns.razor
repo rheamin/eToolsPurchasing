@@ -1,0 +1,78 @@
+@page "/sales/returns"
+@using MudBlazor
+
+<h3>Returns</h3>
+<div class="d-flex">
+    <InputNumber 
+        @bind-Value="invoiceNumber"
+    />
+    <MudButton @onclick="LookupInvoice">
+        Search
+    </MudButton>
+    <MudButton @onclick="Clear">
+        Clear
+    </MudButton>
+    <MudButton @onclick="Refund">
+        Refund
+    </MudButton>
+</div>
+
+<EditForm EditContext="editContext">
+    <ValidationSummary />
+    <table>
+        <thead>
+        <tr>
+            <th>Item</th>
+            <th>Org Qty</th>
+            <th>Price</th>
+            <th>Rtn Qty</th>
+            <th>Qty</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var item in sale.ReturnSaleDetails)
+        {
+            <tr>
+                <td>@item.Description</td>
+                <td>@item.OriginalQty</td>
+                <td>@item.SellingPrice</td>
+                <td>@item.PreviouReturnQty</td>
+                <td>
+                    <InputNumber
+                        @bind-Value="item.QtyReturnNow"/>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+    <table>
+        <tr>
+            <td>Subtotal</td>
+            <td>@sale.SubTotal</td>
+        </tr>
+        <tr>
+            <td>Tax amount</td>
+            <td>@sale.TaxAmount</td>
+        </tr>
+        <tr>
+            <td>Discount</td>
+            <td>@(sale.SubTotal * (discount / 100.00m))</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td>@(sale.SubTotal + sale.TaxAmount -
+                  (sale.SubTotal * (discount / 100.00m)))</td>
+        </tr>
+        @if (refundID.HasValue)
+        {
+            <tr>
+                <td>Refund Id</td>
+                <td>#@refundID</td>
+            </tr>
+        }
+    </table>
+</EditForm>
+
+@code {
+    
+}

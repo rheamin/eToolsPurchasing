@@ -1,0 +1,23 @@
+@using MudBlazor
+<tr>
+    <td>
+        <MudButton
+        @onclick="OnAddClicked"
+            >
+            Add
+        </MudButton>
+    </td>
+    <td>
+        <InputNumber @bind-Value="OrderQuantity"/>
+    </td>
+    <td>
+        $@StockItem.SellingPrice @StockItem.Description
+    </td>
+    <td>
+        @StockItem.QuantityOnHand
+    </td>
+</tr>
+
+@code {
+    
+}

@@ -1,0 +1,93 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = eToolsWebApp
+build_property.RootNamespace = eToolsWebApp
+build_property.ProjectDir = C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\eToolsWebApp\
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\eToolsWebApp
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/App.razor]
+build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Components/ItemRow.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJdGVtUm93LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Components/SalesNav.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xTYWxlc05hdi5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Pages/Receiving/Receiving.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVjZWl2aW5nXFJlY2VpdmluZy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Pages/Sales/Checkout.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcQ2hlY2tvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Pages/Sales/Returns.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcUmV0dXJucy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Pages/Sales/Sales.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcU2FsZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Pages/Sales/ViewCart.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2FsZXNcVmlld0NhcnQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Shared/TableTemplate.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFRhYmxlVGVtcGxhdGUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Pages/Purchasing/Purchasing.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHVyY2hhc2luZ1xQdXJjaGFzaW5nLnJhem9y
+build_metadata.AdditionalFiles.CssScope = b-c7m6everqb
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-vau714r1qb
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-haze0qtt0y
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/marky/Documents/GitHub/2018-sept-2023-a03-project-team2-ao3-sep2023/eTools/eToolsWebApp/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 

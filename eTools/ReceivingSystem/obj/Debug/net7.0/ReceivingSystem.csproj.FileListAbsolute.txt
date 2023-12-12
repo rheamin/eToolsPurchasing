@@ -1,0 +1,14 @@
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\bin\Debug\net7.0\ReceivingSystem.deps.json
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\bin\Debug\net7.0\ReceivingSystem.runtimeconfig.json
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\bin\Debug\net7.0\ReceivingSystem.dll
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\bin\Debug\net7.0\ReceivingSystem.pdb
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\obj\Debug\net7.0\ReceivingSystem.csproj.AssemblyReference.cache
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\obj\Debug\net7.0\ReceivingSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\obj\Debug\net7.0\ReceivingSystem.AssemblyInfoInputs.cache
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\obj\Debug\net7.0\ReceivingSystem.AssemblyInfo.cs
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\obj\Debug\net7.0\ReceivingSystem.csproj.CoreCompileInputs.cache
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\obj\Debug\net7.0\ReceivingSystem.dll
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\obj\Debug\net7.0\refint\ReceivingSystem.dll
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\obj\Debug\net7.0\ReceivingSystem.pdb
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\obj\Debug\net7.0\ReceivingSystem.genruntimeconfig.cache
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\ReceivingSystem\obj\Debug\net7.0\ref\ReceivingSystem.dll

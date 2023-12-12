@@ -1,0 +1,106 @@
+@page "/purchasing"
+
+<header>
+    <h3>Purchasing</h3>
+</header>
+
+<body>
+    <h3>Vendor</h3>
+    <MudSelect @bind-Value="vendorID" Label="Select a vendor from the following list:">
+        <MudSelectItem Value="0">Select a vendor ...</MudSelectItem>
+        @foreach (var vendor in VendorList)
+        {
+            <MudSelectItem Value="@vendor.VendorID">@vendor.VendorName || @vendor.Address @vendor.City @vendor.Province @vendor.PostalCode</MudSelectItem>
+        }
+    </MudSelect>
+
+    <h3>Purchase Order</h3>
+    <MudAlert Severity="Severity.Normal">Welcome @currentUser.FullName!</MudAlert>
+    <br />
+    @if (!string.IsNullOrWhiteSpace(errorMessage))
+    {
+        <MudAlert Severity="Severity.Error">@errorMessage</MudAlert>
+    }
+
+    @if (errorDetails.Count > 0)
+    {
+        @foreach (var error in errorDetails)
+        {
+            errorDetailsDisplay += error;
+        }
+        <MudAlert Severity="Severity.Error">@errorDetailsDisplay</MudAlert>
+    }
+
+    
+    <MudButton Color="Color.Tertiary" Variant="Variant.Filled" @onclick="() => PurchaseOrderLogic(vendorID)">Update</MudButton>
+    <MudButton Color="Color.Tertiary" Variant="Variant.Filled" @onclick="placeOrderLogic" Disabled=@(vendorID == 0)>Place</MudButton>
+    <MudButton Color="Color.Tertiary" Variant="Variant.Filled" @onclick="() => PurchasingService.DeletePurchaseOrder(PurchasingService.GetVendorPurchaseOrder(vendorID).PurchaseOrderID)" Disabled=@(vendorID == 0)>Delete</MudButton>
+    <MudButton Color="Color.Tertiary" Variant="Variant.Filled" @onclick="Clear">Clear</MudButton>
+    @if (vendorID > 0)
+    {
+        <MudText Typo="Typo.body1"><b>PO: #</b>  @(PurchasingService.GetVendorPurchaseOrder(vendorID) == null ? 0 : PurchasingService.GetVendorPurchaseOrder(vendorID).PurchaseOrderID)</MudText>
+        <MudText Typo="Typo.body1"><b>Vendor:</b> @VendorList.Where(x => x.VendorID == vendorID).FirstOrDefault().VendorName</MudText>
+        <MudText Typo="Typo.body1"><b>Phone Number:</b> @VendorList.Where(x => x.VendorID == vendorID).FirstOrDefault().Phone</MudText>
+        <MudText Typo="Typo.body1">@VendorList.Where(x => x.VendorID == vendorID).FirstOrDefault().Address @VendorList.Where(x => x.VendorID == vendorID).FirstOrDefault().City</MudText>
+        <MudText Typo="Typo.body1">@VendorList.Where(x => x.VendorID == vendorID).FirstOrDefault().Province @VendorList.Where(x => x.VendorID == vendorID).FirstOrDefault().PostalCode</MudText>
+    }
+
+    @if (purchaseOrders != null)
+    {
+        <TableTemplate Items="itemsOnOrder" Context="ItemView">
+            <TableHeader>
+                <th></th>
+                <th>ID</th>
+                <th>Description</th>
+                <th>QOH</th>
+                <th>ROL</th>
+                <th>QOO</th>
+                <th>QTO</th>
+                <th>Price</th>
+                <th>Original Price</th>
+                <th></th>
+            </TableHeader>
+            <RowTemplate>
+                <td><MudIconButton Icon="@Icons.Material.Filled.Delete" @onclick="() => RemovePurchaseOrderLine(ItemView)"></MudIconButton></td>
+                <td>@ItemView.StockItemID</td>
+                <td>@ItemView.Description</td>
+                <td>@ItemView.QOH</td>
+                <td>@ItemView.ROL</td>
+                <td>@ItemView.QOO</td>
+                <td><MudNumericField @bind-Value="@ItemView.QTO" /></td>
+                <td><MudNumericField @bind-Value="ItemView.Price" /></td>
+                <td>@ItemView.Price</td>
+                <td><MudButton @onclick="() => Recalculate(ItemView)">ReCalc</MudButton></td>
+            </RowTemplate>
+        </TableTemplate>
+        <MudText Typo="Typo.body1"><b>Subtotal:</b> $@subTotal</MudText>
+        <MudText Typo="Typo.body1"><b>GST:</b> $@GST</MudText>
+        <br />
+        <MudText Typo="Typo.body1"><b>Total:</b> $@total</MudText>
+        <MudButton @onclick="refreshCost">Refresh Cost</MudButton>
+
+        <h3>Stock Item(s)</h3>
+        <TableTemplate Items="itemsNotOnOrder" Context="ItemView">
+            <TableHeader>
+                <th>ID</th>
+                <th>Description</th>
+                <th>QOH</th>
+                <th>ROL</th>
+                <th>QOO</th>
+                <th>Buffer</th>
+                <th>Price</th>
+                <th></th>
+            </TableHeader>
+            <RowTemplate>
+                <td>@ItemView.StockItemID</td>
+                <td>@ItemView.Description</td>
+                <td>@ItemView.QOH</td>
+                <td>@ItemView.ROL</td>
+                <td>@ItemView.QOO</td>
+                <td>@(ItemView.QOH + ItemView.QOO - ItemView.ROL)</td>
+                <td>@ItemView.Price</td>
+                <td><MudButton @onclick="() => AddItemToPurchaseOrderLine(ItemView)">Add</MudButton></td>
+            </RowTemplate>
+        </TableTemplate>
+    }
+</body>

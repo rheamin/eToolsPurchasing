@@ -1,0 +1,65 @@
+@page "/sales/shopping"
+@using System.Reflection.Metadata
+@using eToolsWebApp.Components
+@using SalesSystem.Models
+
+
+<PageTitle>Sales</PageTitle>
+
+<SalesNav />
+<h2 class="mt-5">Shopping</h2>
+
+<div class="container d-flex justify-content-between">
+    <div class="flex-column">
+        <h5>Select Category</h5>
+        <div>
+            <InputRadioGroup 
+                ValueChanged="OnCatChanged"
+                TValue="int"
+                ValueExpression="() => CategoryID"
+                >
+                <div>
+                    <InputRadio id="0" Value="0"/>
+                    <label for="0">All (@Categories.Sum(c => c.StockItemCount))</label>
+                </div>
+                @foreach (var cat in Categories)
+                {
+                    <div>
+                        <InputRadio id="@cat.CategoryID" Value="@cat.CategoryID"/>
+                        <label for="@cat.CategoryID">@cat.Description  (@cat.StockItemCount)</label>
+                    </div>
+                }
+            </InputRadioGroup>
+        </div>
+    </div>
+    <div class="flex-column">
+        @if (StockItems.Count == 0)
+        {
+            <p>No items</p>
+        }
+        else
+        {
+            if (_invalidOrderQuantity)
+            {
+                <div class="alert alert-danger">
+                    Invalid Order Quantity
+                </div>
+            }
+            <table>
+            @foreach (var item in StockItems)
+            {
+                <ItemRow 
+                    StockItem="item"
+                    OnAdd="OnAddItem"
+                    />
+            }  
+            </table>
+                
+        }
+    </div>
+</div>
+
+@code {
+
+    
+}

@@ -1,0 +1,14 @@
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\bin\Debug\net7.0\SalesSystem.deps.json
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\bin\Debug\net7.0\SalesSystem.runtimeconfig.json
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\bin\Debug\net7.0\SalesSystem.dll
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\bin\Debug\net7.0\SalesSystem.pdb
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\obj\Debug\net7.0\SalesSystem.csproj.AssemblyReference.cache
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\obj\Debug\net7.0\SalesSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\obj\Debug\net7.0\SalesSystem.AssemblyInfoInputs.cache
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\obj\Debug\net7.0\SalesSystem.AssemblyInfo.cs
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\obj\Debug\net7.0\SalesSystem.csproj.CoreCompileInputs.cache
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\obj\Debug\net7.0\SalesSystem.dll
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\obj\Debug\net7.0\refint\SalesSystem.dll
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\obj\Debug\net7.0\SalesSystem.pdb
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\obj\Debug\net7.0\SalesSystem.genruntimeconfig.cache
+C:\Users\marky\Documents\GitHub\2018-sept-2023-a03-project-team2-ao3-sep2023\eTools\SalesSystem\obj\Debug\net7.0\ref\SalesSystem.dll

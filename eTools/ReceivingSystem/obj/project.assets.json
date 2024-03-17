@@ -2852,11 +2852,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\ReceivingSystem\\ReceivingSystem.csproj",
+      "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\ReceivingSystem\\ReceivingSystem.csproj",
       "projectName": "ReceivingSystem",
-      "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\ReceivingSystem\\ReceivingSystem.csproj",
+      "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\ReceivingSystem\\ReceivingSystem.csproj",
       "packagesPath": "C:\\Users\\marky\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\ReceivingSystem\\obj\\",
+      "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\ReceivingSystem\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\marky\\AppData\\Roaming\\NuGet\\NuGet.Config",

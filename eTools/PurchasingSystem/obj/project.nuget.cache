@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0WMaV7RuemhcFMpNhqFTZIVQQkTYsUmp7mCskDde8tGtya9cofrsbNuY7jbCV01hCThlkYBVLyER5T/oxOTVXA==",
+  "dgSpecHash": "m4o/PDAvpHIhTQgNHJhxz4ZQ7YJOV94jTHOhW4Cn+I0H6MDl4Hg4fEKy94atSO5zht1R5df7rz115mHcDM0moA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\PurchasingSystem\\PurchasingSystem.csproj",
+  "projectFilePath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\PurchasingSystem\\PurchasingSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marky\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\marky\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

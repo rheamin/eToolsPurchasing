@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\eToolsWebApp\\eToolsWebApp.csproj": {}
+    "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\eToolsWebApp\\eToolsWebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\eToolsWebApp\\eToolsWebApp.csproj": {
+    "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\eToolsWebApp\\eToolsWebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\eToolsWebApp\\eToolsWebApp.csproj",
+        "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\eToolsWebApp\\eToolsWebApp.csproj",
         "projectName": "eToolsWebApp",
-        "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\eToolsWebApp\\eToolsWebApp.csproj",
+        "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\eToolsWebApp\\eToolsWebApp.csproj",
         "packagesPath": "C:\\Users\\marky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\eToolsWebApp\\obj\\",
+        "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\eToolsWebApp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marky\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\PurchasingSystem\\PurchasingSystem.csproj": {
-                "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\PurchasingSystem\\PurchasingSystem.csproj"
+              "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\PurchasingSystem\\PurchasingSystem.csproj": {
+                "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\PurchasingSystem\\PurchasingSystem.csproj"
               },
-              "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\ReceivingSystem\\ReceivingSystem.csproj": {
-                "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\ReceivingSystem\\ReceivingSystem.csproj"
+              "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\ReceivingSystem\\ReceivingSystem.csproj": {
+                "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\ReceivingSystem\\ReceivingSystem.csproj"
               },
-              "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\SalesSystem\\SalesSystem.csproj": {
-                "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\SalesSystem\\SalesSystem.csproj"
+              "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\SalesSystem\\SalesSystem.csproj": {
+                "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\SalesSystem\\SalesSystem.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\PurchasingSystem\\PurchasingSystem.csproj": {
+    "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\PurchasingSystem\\PurchasingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\PurchasingSystem\\PurchasingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\PurchasingSystem\\PurchasingSystem.csproj",
         "projectName": "PurchasingSystem",
-        "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\PurchasingSystem\\PurchasingSystem.csproj",
+        "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\PurchasingSystem\\PurchasingSystem.csproj",
         "packagesPath": "C:\\Users\\marky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\PurchasingSystem\\obj\\",
+        "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\PurchasingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marky\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -159,14 +159,14 @@
         }
       }
     },
-    "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\ReceivingSystem\\ReceivingSystem.csproj": {
+    "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\ReceivingSystem\\ReceivingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\ReceivingSystem\\ReceivingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\ReceivingSystem\\ReceivingSystem.csproj",
         "projectName": "ReceivingSystem",
-        "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\ReceivingSystem\\ReceivingSystem.csproj",
+        "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\ReceivingSystem\\ReceivingSystem.csproj",
         "packagesPath": "C:\\Users\\marky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\ReceivingSystem\\obj\\",
+        "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\ReceivingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marky\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -226,14 +226,14 @@
         }
       }
     },
-    "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\SalesSystem\\SalesSystem.csproj": {
+    "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\SalesSystem\\SalesSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\SalesSystem\\SalesSystem.csproj",
+        "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\SalesSystem\\SalesSystem.csproj",
         "projectName": "SalesSystem",
-        "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\SalesSystem\\SalesSystem.csproj",
+        "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\SalesSystem\\SalesSystem.csproj",
         "packagesPath": "C:\\Users\\marky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\SalesSystem\\obj\\",
+        "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\SalesSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marky\\AppData\\Roaming\\NuGet\\NuGet.Config",

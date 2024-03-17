@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ezGp/HR5Rejx1T5WoHxrn1020QftGdbAsHhVdS2rDqhkIyXzSuurEceR4mH189ljYMn1KKB0nbW+FTejCEo1Yg==",
+  "dgSpecHash": "7xz0J4FEYO24WjEXjZ/q66GaA5ZcV5SIQt9JkDIMSbhAVJsai8RTzyWLlu8x2/floFEygTK/dkWOOZhs9bO5xA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\ReceivingSystem\\ReceivingSystem.csproj",
+  "projectFilePath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\ReceivingSystem\\ReceivingSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\marky\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\marky\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

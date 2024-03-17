@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\SalesSystem\\SalesSystem.csproj": {}
+    "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\SalesSystem\\SalesSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\SalesSystem\\SalesSystem.csproj": {
+    "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\SalesSystem\\SalesSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\SalesSystem\\SalesSystem.csproj",
+        "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\SalesSystem\\SalesSystem.csproj",
         "projectName": "SalesSystem",
-        "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\SalesSystem\\SalesSystem.csproj",
+        "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\SalesSystem\\SalesSystem.csproj",
         "packagesPath": "C:\\Users\\marky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\SalesSystem\\obj\\",
+        "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\SalesSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marky\\AppData\\Roaming\\NuGet\\NuGet.Config",

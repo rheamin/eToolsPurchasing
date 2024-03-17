@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\PurchasingSystem\\PurchasingSystem.csproj": {}
+    "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\PurchasingSystem\\PurchasingSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\PurchasingSystem\\PurchasingSystem.csproj": {
+    "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\PurchasingSystem\\PurchasingSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\PurchasingSystem\\PurchasingSystem.csproj",
+        "projectUniqueName": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\PurchasingSystem\\PurchasingSystem.csproj",
         "projectName": "PurchasingSystem",
-        "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\PurchasingSystem\\PurchasingSystem.csproj",
+        "projectPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\PurchasingSystem\\PurchasingSystem.csproj",
         "packagesPath": "C:\\Users\\marky\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\2018-sept-2023-a03-project-team2-ao3-sep2023\\eTools\\PurchasingSystem\\obj\\",
+        "outputPath": "C:\\Users\\marky\\Documents\\GitHub\\eToolsPurchasing\\eTools\\PurchasingSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\marky\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,652 @@
+<mxfile host="app.diagrams.net" modified="2026-07-21" agent="opencode" version="24.0.0" type="device">
+  <diagram id="erd" name="eTools Purchasing System ERD">
+    <mxGraphModel dx="2200" dy="1800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2700" pageHeight="2200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- ========== TITLE ========== -->
+        <mxCell id="title" value="eTools Purchasing System — Entity Relationship Diagram&#xa;Database: eTools2023 | ORM: Entity Framework Core 7.0" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;fontStyle=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="800" y="20" width="600" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- ========== GROUP: Reference Tables ========== -->
+        <mxCell id="grpRef" value="Reference Tables" style="swimlane;startSize=25;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=13;rounded=1;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="30" y="100" width="620" height="520" as="geometry" />
+        </mxCell>
+
+        <!-- Position -->
+        <mxCell id="tblPosition" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;" vertex="1" parent="grpRef">
+          <mxGeometry x="20" y="40" width="280" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="tblPosition_header" value="Position" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblPosition">
+          <mxGeometry width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPosition_r1" value="PK  PositionID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPosition">
+          <mxGeometry y="28" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPosition_r2" value="Description : string(50)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPosition">
+          <mxGeometry y="56" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPosition_r3" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPosition">
+          <mxGeometry y="84" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- Province -->
+        <mxCell id="tblProvince" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;" vertex="1" parent="grpRef">
+          <mxGeometry x="320" y="40" width="280" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="tblProvince_header" value="Province" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblProvince">
+          <mxGeometry width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblProvince_r1" value="PK  ProvinceID : string(2)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblProvince">
+          <mxGeometry y="28" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblProvince_r2" value="Description : string(50)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblProvince">
+          <mxGeometry y="56" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblProvince_r3" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblProvince">
+          <mxGeometry y="84" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- Category -->
+        <mxCell id="tblCategory" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;" vertex="1" parent="grpRef">
+          <mxGeometry x="20" y="290" width="280" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="tblCategory_header" value="Category" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblCategory">
+          <mxGeometry width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblCategory_r1" value="PK  CategoryID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblCategory">
+          <mxGeometry y="28" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblCategory_r2" value="Description : string(50)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblCategory">
+          <mxGeometry y="56" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblCategory_r3" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblCategory">
+          <mxGeometry y="84" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- Coupon -->
+        <mxCell id="tblCoupon" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontColor=#333333;" vertex="1" parent="grpRef">
+          <mxGeometry x="320" y="290" width="280" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="tblCoupon_header" value="Coupon" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblCoupon">
+          <mxGeometry width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblCoupon_r1" value="PK  CouponID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblCoupon">
+          <mxGeometry y="28" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblCoupon_r2" value="CouponIDValue : string(10) [unique]" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblCoupon">
+          <mxGeometry y="56" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblCoupon_r3" value="StartDate : DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblCoupon">
+          <mxGeometry y="84" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblCoupon_r4" value="EndDate : DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblCoupon">
+          <mxGeometry y="112" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblCoupon_r5" value="CouponDiscount : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblCoupon">
+          <mxGeometry y="140" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblCoupon_r6" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblCoupon">
+          <mxGeometry y="168" width="280" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- ========== GROUP: People & Vendors ========== -->
+        <mxCell id="grpPeople" value="People &amp; Vendors" style="swimlane;startSize=25;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=13;rounded=1;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="700" y="100" width="620" height="520" as="geometry" />
+        </mxCell>
+
+        <!-- Employee -->
+        <mxCell id="tblEmployee" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;" vertex="1" parent="grpPeople">
+          <mxGeometry x="20" y="40" width="580" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="tblEmployee_header" value="Employee" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblEmployee">
+          <mxGeometry width="580" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblEmployee_r1" value="PK  EmployeeID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblEmployee">
+          <mxGeometry y="28" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblEmployee_r2" value="FirstName : string(25)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblEmployee">
+          <mxGeometry y="52" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblEmployee_r3" value="LastName : string(25)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblEmployee">
+          <mxGeometry y="76" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblEmployee_r4" value="DateHired : DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblEmployee">
+          <mxGeometry y="100" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblEmployee_r5" value="DateReleased : DateTime?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblEmployee">
+          <mxGeometry y="124" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblEmployee_r6" value="LoginID : string(30)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblEmployee">
+          <mxGeometry y="148" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblEmployee_r7" value="Address : string(75)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblEmployee">
+          <mxGeometry y="172" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblEmployee_r8" value="City : string(30)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblEmployee">
+          <mxGeometry y="196" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblEmployee_r9" value="ContactPhone : string(12)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblEmployee">
+          <mxGeometry y="220" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblEmployee_r10" value="PostalCode : string(6)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblEmployee">
+          <mxGeometry y="244" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblEmployee_r11" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblEmployee">
+          <mxGeometry y="268" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblEmployee_r12" value="FK  PositionID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblEmployee">
+          <mxGeometry y="296" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- Vendor -->
+        <mxCell id="tblVendor" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#d5e8d4;strokeColor=#82b366;fontColor=#333333;" vertex="1" parent="grpPeople">
+          <mxGeometry x="20" y="340" width="580" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="tblVendor_header" value="Vendor" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblVendor">
+          <mxGeometry width="580" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblVendor_r1" value="PK  VendorID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblVendor">
+          <mxGeometry y="28" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblVendor_r2" value="VendorName : string(100)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblVendor">
+          <mxGeometry y="52" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblVendor_r3" value="Phone : string(12)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblVendor">
+          <mxGeometry y="76" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblVendor_r4" value="Address : string(30)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblVendor">
+          <mxGeometry y="100" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblVendor_r5" value="City : string(50)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblVendor">
+          <mxGeometry y="124" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblVendor_r6" value="PostalCode : string(6)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblVendor">
+          <mxGeometry y="148" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblVendor_r7" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblVendor">
+          <mxGeometry y="172" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblVendor_r8" value="FK  ProvinceID : string(2)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblVendor">
+          <mxGeometry y="196" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- ========== GROUP: Inventory ========== -->
+        <mxCell id="grpInv" value="Inventory" style="swimlane;startSize=25;fillColor=#fff2cc;strokeColor=#d6b656;fontStyle=1;fontSize=13;rounded=1;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="100" width="580" height="520" as="geometry" />
+        </mxCell>
+
+        <!-- StockItem -->
+        <mxCell id="tblStockItem" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#fff2cc;strokeColor=#d6b656;fontColor=#333333;" vertex="1" parent="grpInv">
+          <mxGeometry x="20" y="40" width="540" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="tblStockItem_header" value="StockItem" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblStockItem">
+          <mxGeometry width="540" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblStockItem_r1" value="PK  StockItemID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblStockItem">
+          <mxGeometry y="28" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblStockItem_r2" value="Description : string(50)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblStockItem">
+          <mxGeometry y="52" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblStockItem_r3" value="SellingPrice : smallmoney" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblStockItem">
+          <mxGeometry y="76" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblStockItem_r4" value="PurchasePrice : smallmoney" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblStockItem">
+          <mxGeometry y="100" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblStockItem_r5" value="QuantityOnHand : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblStockItem">
+          <mxGeometry y="124" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblStockItem_r6" value="QuantityOnOrder : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblStockItem">
+          <mxGeometry y="148" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblStockItem_r7" value="ReOrderLevel : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblStockItem">
+          <mxGeometry y="172" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblStockItem_r8" value="Discontinued : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblStockItem">
+          <mxGeometry y="196" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblStockItem_r9" value="VendorStockNumber : string(25)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblStockItem">
+          <mxGeometry y="220" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblStockItem_r10" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblStockItem">
+          <mxGeometry y="244" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblStockItem_r11" value="FK  VendorID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblStockItem">
+          <mxGeometry y="272" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblStockItem_r12" value="FK  CategoryID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblStockItem">
+          <mxGeometry y="296" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- ========== GROUP: Purchasing ========== -->
+        <mxCell id="grpPurch" value="Purchasing" style="swimlane;startSize=25;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;fontSize=13;rounded=1;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="30" y="660" width="620" height="400" as="geometry" />
+        </mxCell>
+
+        <!-- PurchaseOrder -->
+        <mxCell id="tblPurchaseOrder" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333;" vertex="1" parent="grpPurch">
+          <mxGeometry x="20" y="40" width="580" height="340" as="geometry" />
+        </mxCell>
+        <mxCell id="tblPurchaseOrder_header" value="PurchaseOrder" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblPurchaseOrder">
+          <mxGeometry width="580" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPurchaseOrder_r1" value="PK  PurchaseOrderID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPurchaseOrder">
+          <mxGeometry y="28" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPurchaseOrder_r2" value="OrderDate : DateTime?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPurchaseOrder">
+          <mxGeometry y="52" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPurchaseOrder_r3" value="TaxAmount : money" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPurchaseOrder">
+          <mxGeometry y="76" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPurchaseOrder_r4" value="SubTotal : money" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPurchaseOrder">
+          <mxGeometry y="100" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPurchaseOrder_r5" value="Closed : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPurchaseOrder">
+          <mxGeometry y="124" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPurchaseOrder_r6" value="Notes : string(100)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPurchaseOrder">
+          <mxGeometry y="148" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPurchaseOrder_r7" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPurchaseOrder">
+          <mxGeometry y="172" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPurchaseOrder_r8" value="FK  VendorID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblPurchaseOrder">
+          <mxGeometry y="200" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPurchaseOrder_r9" value="FK  EmployeeID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblPurchaseOrder">
+          <mxGeometry y="224" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- PurchaseOrderDetail -->
+        <mxCell id="tblPurchaseOrderDetail" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#f8cecc;strokeColor=#b85450;fontColor=#333333;" vertex="1" parent="grpPurch">
+          <mxGeometry x="20" y="250" width="580" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="tblPODetail_header" value="PurchaseOrderDetail" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblPurchaseOrderDetail">
+          <mxGeometry width="580" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPODetail_r1" value="PK  PurchaseOrderDetailID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPurchaseOrderDetail">
+          <mxGeometry y="28" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPODetail_r2" value="PurchasePrice : money" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPurchaseOrderDetail">
+          <mxGeometry y="52" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPODetail_r3" value="Quantity : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPurchaseOrderDetail">
+          <mxGeometry y="76" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPODetail_r4" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblPurchaseOrderDetail">
+          <mxGeometry y="100" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPODetail_r5" value="FK  PurchaseOrderID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblPurchaseOrderDetail">
+          <mxGeometry y="124" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblPODetail_r6" value="FK  StockItemID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblPurchaseOrderDetail">
+          <mxGeometry y="148" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- ========== GROUP: Receiving ========== -->
+        <mxCell id="grpRecv" value="Receiving" style="swimlane;startSize=25;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;fontSize=13;rounded=1;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="700" y="660" width="620" height="680" as="geometry" />
+        </mxCell>
+
+        <!-- ReceiveOrder -->
+        <mxCell id="tblReceiveOrder" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#333333;" vertex="1" parent="grpRecv">
+          <mxGeometry x="20" y="40" width="580" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="tblRecvOrder_header" value="ReceiveOrder" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblReceiveOrder">
+          <mxGeometry width="580" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRecvOrder_r1" value="PK  ReceiveOrderID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblReceiveOrder">
+          <mxGeometry y="28" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRecvOrder_r2" value="ReceiveDate : DateTime?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblReceiveOrder">
+          <mxGeometry y="52" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRecvOrder_r3" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblReceiveOrder">
+          <mxGeometry y="76" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRecvOrder_r4" value="FK  PurchaseOrderID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblReceiveOrder">
+          <mxGeometry y="100" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRecvOrder_r5" value="FK  EmployeeID : int?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblReceiveOrder">
+          <mxGeometry y="124" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- ReceiveOrderDetail -->
+        <mxCell id="tblReceiveOrderDetail" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#333333;" vertex="1" parent="grpRecv">
+          <mxGeometry x="20" y="180" width="580" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="tblRecvDetail_header" value="ReceiveOrderDetail" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblReceiveOrderDetail">
+          <mxGeometry width="580" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRecvDetail_r1" value="PK  ReceiveOrderDetailID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblReceiveOrderDetail">
+          <mxGeometry y="28" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRecvDetail_r2" value="QuantityReceived : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblReceiveOrderDetail">
+          <mxGeometry y="52" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRecvDetail_r3" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblReceiveOrderDetail">
+          <mxGeometry y="76" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRecvDetail_r4" value="FK  ReceiveOrderID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblReceiveOrderDetail">
+          <mxGeometry y="100" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRecvDetail_r5" value="FK  PurchaseOrderDetailID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblReceiveOrderDetail">
+          <mxGeometry y="124" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- UnOrderedItem -->
+        <mxCell id="tblUnOrderedItem" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#333333;" vertex="1" parent="grpRecv">
+          <mxGeometry x="20" y="320" width="580" height="155" as="geometry" />
+        </mxCell>
+        <mxCell id="tblUnordered_header" value="UnOrderedItem" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblUnOrderedItem">
+          <mxGeometry width="580" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblUnordered_r1" value="PK  UnOrderedItemID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblUnOrderedItem">
+          <mxGeometry y="28" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblUnordered_r2" value="ItemID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblUnOrderedItem">
+          <mxGeometry y="52" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblUnordered_r3" value="ItemName : string(50)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblUnOrderedItem">
+          <mxGeometry y="76" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblUnordered_r4" value="VendorProductID : string(25)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblUnOrderedItem">
+          <mxGeometry y="100" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblUnordered_r5" value="Quantity : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblUnOrderedItem">
+          <mxGeometry y="124" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblUnordered_r6" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblUnOrderedItem">
+          <mxGeometry y="148" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblUnordered_r7" value="FK  ReceiveOrderID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblUnOrderedItem">
+          <mxGeometry y="172" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- ReturnedOrderDetail -->
+        <mxCell id="tblReturnedOrderDetail" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontColor=#333333;" vertex="1" parent="grpRecv">
+          <mxGeometry x="20" y="500" width="580" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="tblReturn_header" value="ReturnedOrderDetail" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblReturnedOrderDetail">
+          <mxGeometry width="580" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblReturn_r1" value="PK  ReturnedOrderDetailID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblReturnedOrderDetail">
+          <mxGeometry y="28" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblReturn_r2" value="ItemDescription : string(50)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblReturnedOrderDetail">
+          <mxGeometry y="52" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblReturn_r3" value="Quantity : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblReturnedOrderDetail">
+          <mxGeometry y="76" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblReturn_r4" value="Reason : string(50)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblReturnedOrderDetail">
+          <mxGeometry y="100" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblReturn_r5" value="VendorStockNumber : string(15)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblReturnedOrderDetail">
+          <mxGeometry y="124" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblReturn_r6" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblReturnedOrderDetail">
+          <mxGeometry y="148" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblReturn_r7" value="FK  ReceiveOrderID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblReturnedOrderDetail">
+          <mxGeometry y="172" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblReturn_r8" value="FK  PurchaseOrderDetailID : int?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblReturnedOrderDetail">
+          <mxGeometry y="196" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblReturn_r9" value="FK  UnOrderedItemID : int?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblReturnedOrderDetail">
+          <mxGeometry y="220" width="580" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- ========== GROUP: Sales ========== -->
+        <mxCell id="grpSales" value="Sales" style="swimlane;startSize=25;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=13;rounded=1;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="1370" y="660" width="580" height="680" as="geometry" />
+        </mxCell>
+
+        <!-- Sale -->
+        <mxCell id="tblSale" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;" vertex="1" parent="grpSales">
+          <mxGeometry x="20" y="40" width="540" height="175" as="geometry" />
+        </mxCell>
+        <mxCell id="tblSale_header" value="Sale" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblSale">
+          <mxGeometry width="540" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSale_r1" value="PK  SaleID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSale">
+          <mxGeometry y="28" width="540" height="22" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSale_r2" value="SaleDate : DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSale">
+          <mxGeometry y="50" width="540" height="22" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSale_r3" value="PaymentType : string(1)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSale">
+          <mxGeometry y="72" width="540" height="22" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSale_r4" value="TaxAmount : smallmoney" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSale">
+          <mxGeometry y="94" width="540" height="22" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSale_r5" value="SubTotal : money" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSale">
+          <mxGeometry y="116" width="540" height="22" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSale_r6" value="PaymentToken : Guid?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSale">
+          <mxGeometry y="138" width="540" height="22" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSale_r7" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSale">
+          <mxGeometry y="160" width="540" height="22" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSale_r8" value="FK  EmployeeID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblSale">
+          <mxGeometry y="182" width="540" height="22" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSale_r9" value="FK  CouponID : int?" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblSale">
+          <mxGeometry y="204" width="540" height="22" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- SaleDetail -->
+        <mxCell id="tblSaleDetail" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;" vertex="1" parent="grpSales">
+          <mxGeometry x="20" y="230" width="540" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="tblSaleDet_header" value="SaleDetail" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblSaleDetail">
+          <mxGeometry width="540" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSaleDet_r1" value="PK  SaleDetailID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleDetail">
+          <mxGeometry y="28" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSaleDet_r2" value="SellingPrice : smallmoney" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleDetail">
+          <mxGeometry y="52" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSaleDet_r3" value="Quantity : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleDetail">
+          <mxGeometry y="76" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSaleDet_r4" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleDetail">
+          <mxGeometry y="100" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSaleDet_r5" value="FK  SaleID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblSaleDetail">
+          <mxGeometry y="124" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblSaleDet_r6" value="FK  StockItemID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblSaleDetail">
+          <mxGeometry y="148" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- SaleRefund -->
+        <mxCell id="tblSaleRefund" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;" vertex="1" parent="grpSales">
+          <mxGeometry x="20" y="380" width="540" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="tblRefund_header" value="SaleRefund" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblSaleRefund">
+          <mxGeometry width="540" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefund_r1" value="PK  SaleRefundID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleRefund">
+          <mxGeometry y="28" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefund_r2" value="SaleRefundDate : DateTime" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleRefund">
+          <mxGeometry y="52" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefund_r3" value="TaxAmount : money" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleRefund">
+          <mxGeometry y="76" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefund_r4" value="SubTotal : money" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleRefund">
+          <mxGeometry y="100" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefund_r5" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleRefund">
+          <mxGeometry y="124" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefund_r6" value="FK  SaleID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblSaleRefund">
+          <mxGeometry y="148" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefund_r7" value="FK  EmployeeID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblSaleRefund">
+          <mxGeometry y="172" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- SaleRefundDetail -->
+        <mxCell id="tblSaleRefundDetail" value="" style="shape=table;startSize=28;container=1;collapsible=0;childLayout=tableLayout;fontSize=11;fontStyle=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontColor=#333333;" vertex="1" parent="grpSales">
+          <mxGeometry x="20" y="530" width="540" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="tblRefDet_header" value="SaleRefundDetail" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;fontStyle=1;fontSize=12;" vertex="1" parent="tblSaleRefundDetail">
+          <mxGeometry width="540" height="28" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefDet_r1" value="PK  SaleRefundDetailID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleRefundDetail">
+          <mxGeometry y="28" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefDet_r2" value="SellingPrice : money" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleRefundDetail">
+          <mxGeometry y="52" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefDet_r3" value="Quantity : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleRefundDetail">
+          <mxGeometry y="76" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefDet_r4" value="RemoveFromViewFlag : bool" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;" vertex="1" parent="tblSaleRefundDetail">
+          <mxGeometry y="100" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefDet_r5" value="FK  SaleRefundID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblSaleRefundDetail">
+          <mxGeometry y="124" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+        <mxCell id="tblRefDet_r6" value="FK  StockItemID : int" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=11;fontStyle=2;fontColor=#999999;" vertex="1" parent="tblSaleRefundDetail">
+          <mxGeometry y="148" width="540" height="24" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <!-- ========== RELATIONSHIPS ========== -->
+
+        <!-- Position -> Employee -->
+        <mxCell id="rel1" value="employs" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblPosition_r2" target="tblEmployee_r12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Province -> Vendor -->
+        <mxCell id="rel2" value="located in" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblProvince_r2" target="tblVendor_r8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Category -> StockItem -->
+        <mxCell id="rel3" value="classifies" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblCategory_r2" target="tblStockItem_r12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Vendor -> StockItem -->
+        <mxCell id="rel4" value="supplies" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblVendor_r2" target="tblStockItem_r11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Vendor -> PurchaseOrder -->
+        <mxCell id="rel5" value="receives POs from" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblVendor_r3" target="tblPurchaseOrder_r8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Coupon -> Sale -->
+        <mxCell id="rel6" value="applied to (optional)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblCoupon_r2" target="tblSale_r9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Employee -> PurchaseOrder -->
+        <mxCell id="rel7" value="creates PO" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblEmployee_r1" target="tblPurchaseOrder_r9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Employee -> ReceiveOrder -->
+        <mxCell id="rel8" value="receives goods (optional)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERzeroOrOne;startFill=0;" edge="1" parent="1" source="tblEmployee_r2" target="tblRecvOrder_r5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Employee -> Sale -->
+        <mxCell id="rel9" value="processes sale" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblEmployee_r3" target="tblSale_r8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Employee -> SaleRefund -->
+        <mxCell id="rel10" value="processes refund" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblEmployee_r4" target="tblRefund_r7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- PurchaseOrder -> PurchaseOrderDetail -->
+        <mxCell id="rel11" value="contains line items" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblPurchaseOrder_r1" target="tblPODetail_r5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- PurchaseOrder -> ReceiveOrder -->
+        <mxCell id="rel12" value="generates receive orders" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblPurchaseOrder_r2" target="tblRecvOrder_r4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- StockItem -> PurchaseOrderDetail -->
+        <mxCell id="rel13" value="ordered on PO" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblStockItem_r1" target="tblPODetail_r6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ReceiveOrder -> ReceiveOrderDetail -->
+        <mxCell id="rel14" value="has received line items" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblRecvOrder_r1" target="tblRecvDetail_r4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ReceiveOrder -> UnOrderedItem -->
+        <mxCell id="rel15" value="may include unordered items" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblRecvOrder_r2" target="tblUnordered_r7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- ReceiveOrder -> ReturnedOrderDetail -->
+        <mxCell id="rel16" value="may include returns" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblRecvOrder_r3" target="tblReturn_r7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- PurchaseOrderDetail -> ReceiveOrderDetail -->
+        <mxCell id="rel17" value="matched against received qty" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblPODetail_r1" target="tblRecvDetail_r5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- PurchaseOrderDetail -> ReturnedOrderDetail -->
+        <mxCell id="rel18" value="may be returned (optional)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERzeroOrOne;startFill=0;" edge="1" parent="1" source="tblPODetail_r2" target="tblReturn_r8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- UnOrderedItem -> ReturnedOrderDetail -->
+        <mxCell id="rel19" value="may be returned (optional)" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERzeroOrOne;startFill=0;" edge="1" parent="1" source="tblUnordered_r1" target="tblReturn_r9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Sale -> SaleDetail -->
+        <mxCell id="rel20" value="contains line items" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblSale_r1" target="tblSaleDet_r5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Sale -> SaleRefund -->
+        <mxCell id="rel21" value="may be refunded" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblSale_r2" target="tblRefund_r6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- StockItem -> SaleDetail -->
+        <mxCell id="rel22" value="sold in sale" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblStockItem_r3" target="tblSaleDet_r6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- StockItem -> SaleRefundDetail -->
+        <mxCell id="rel23" value="returned in refund" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblStockItem_r4" target="tblRefDet_r6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- SaleRefund -> SaleRefundDetail -->
+        <mxCell id="rel24" value="has refund line items" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#666666;fontSize=10;fontColor=#333333;labelBackgroundColor=#ffffff;endArrow=ERmany;endFill=0;startArrow=ERone;startFill=0;" edge="1" parent="1" source="tblRefund_r1" target="tblRefDet_r5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
